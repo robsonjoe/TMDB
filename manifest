@@ -1,0 +1,30 @@
+##   Channel Details
+title=Roku Lesson 6
+major_version=1
+minor_version=0
+build_version=0
+
+title=TMDB App
+subtitle=by Joe Robson
+major_version=1
+minor_version=0
+build_version=0
+
+## Channel Icons
+#### Image sizes are mm_icon_focus_fhd: 540x405px | mm_icon_focus_hd: 290x218px | mm_icon_focus_sd: 214x144px
+mm_icon_focus_hd=pkg:/images/tmdb_logo_hd.png
+
+###  Splash Screen + Loading Screen Artwork
+#### Image sizes are splash_screen_fhd: 1920x1080px | splash_screen_hd: 1280x720px | splash_screen_sd: 720x480px
+splash_screen_sd=pkg:/images/tmdb_splash_sd.png
+splash_screen_hd=pkg:/images/tmdb_splash_hd.png
+splash_screen_fhd=pkg:/images/tmdb_splash_fhd.png
+
+#tell the Roku we designed our app for 1080p
+ui_resolutions=fhd
+
+#get rid of black screen flash when app starts
+
+# splash_color=#662D91
+# splash_min_time=10000
+# splash_rsg_optimization=1

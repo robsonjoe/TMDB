@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- <component   name="search_screen"   extends="Group"   initialFocus="cont_grid" > -->
+<component   name="search_screen"   extends="Group"  >
+<script type="text/brightscript" uri="pkg:/components/screens/search_screen.brs" />
+<interface>
+  <!-- <field id="feed_data"
+      type="assocarray"
+      onChange="onFeedChanged"
+      />
+  <field id="content_selected"
+      type="assocarray"
+      alias="content_grid.itemSelected"
+      /> -->
+    <!-- <field id="movie_button_pressed"
+    type="assocarray"
+    alias="movieButton.buttonSelected"
+    /> -->
+</interface>
+<children>
+  <Poster 
+    id="tmdbbannerimage" 
+    translation="[150, 150]"  
+    width="1620" 
+    height="216"
+    loadDisplayMode = "scaleToZoom" 
+    uri=""
+    />
+
+     <Button 
+     id = "movieButton" 
+     text = "Click To Search..."  
+     iconUri="" 
+     focusedIconUri="" 
+     showFocusFootprint = "true" 
+     translation="[1350, 210]" 
+     minWidth = "240" />
+
+<Poster id="dialogBackgroundPoster" translation="[650, 100]" width="620" height="850" uri="pkg:/images/dialog-background-fhd.9.png">
+            <Label id="popupTitleLabel" translation="[150, 20]" text="Movie Search" font="font:LargeBoldSystemFont" />
+            <DynamicMiniKeyboard id = "miniKeyboard" translation="[20, 75]"/>
+        </Poster>
+
+</children>
+
+</component>
+

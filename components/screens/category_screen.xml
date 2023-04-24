@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="category_screen"
+  extends="Group"
+  >
+  <script type="text/brightscript" uri="pkg:/components/screens/category_screen.brs" />
+  <interface>
+    <field id="header_selected"
+		    type="assocarray"
+		    alias="header_list.itemSelected"
+        />
+  </interface>
+  <children>
+    <!-- color="0x000000" -->
+
+    <Poster id="blankbanner" 
+    width="1920" 
+    height="140" 
+    translation="[0, 10]" 
+    loadWidth="768" 
+    loadHeight="56" 
+    loadDisplayMode = "scaleToZoom" 
+    uri="pkg:/images/tmdbblankbanner.png" />
+    
+        
+        <!-- hex color - 032541 -->
+      
+    <Poster 
+    id="tmdblogo" 
+    translation="[100, 60]" 
+    width="275" height="50"
+
+    uri="pkg:/images/tmdblogo.png"
+    />
+        
+
+        <PosterGrid 
+          translation= "[1000, 40]"
+          id = "header_list" 
+          basePosterSize = "[ 200, 100 ]" 
+          caption1NumLines = "0"
+          captionVertAlignment = "center"
+          numColumns = "4" 
+          numRows = "1" 
+          itemSpacing = "[ 20, 20 ]"
+          vertFocusAnimationStyle = "floatingFocus"
+          fixedLayout = "true" >
+      </PosterGrid>
+
+  </children>
+</component>

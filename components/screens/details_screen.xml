@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="details_screen" extends="Group">
+	<interface>
+		<!-- Content fields -->
+		<field id="content"
+		    type="node"
+		    alwaysnotify="true"
+		    onChange="OnContentChange" />
+		<field id="play_button_pressed"
+		    type="int"
+		    alwaysnotify="true"
+		    alias="play_button.buttonSelected" />
+	</interface>
+	<script type="text/brightscript" uri="pkg:/components/screens/details_screen.brs" />
+	<children>
+		<!-- Item description -->
+    <Poster
+      id="background"
+      opacity="0.4"
+      width="1920"
+      height="1080"
+      loadWidth="1280" 
+      loadHeight="720" 
+      loadDisplayMode = "scaleToFit" 
+      translation="[0,150]" />
+    <Poster
+      id="thumbnail"
+      width="500"
+      height="700"
+      loadWidth="500" 
+      loadHeight="700" 
+      loadDisplayMode = "scaleToFit" 
+      translation="[175,250]" />
+    <Button
+      id="play_button"
+      text="PLAY"
+      translation="[200, 600]" 
+      visible = "false"/>
+    <Label
+      id="title"
+      font="font:LargeBoldSystemFont"
+      color="0x000000"
+			width="1100"
+      text=""
+      translation="[700,275]" />
+    <Label
+      id="release"
+      font="font:MediumBoldSystemFont"
+      color="0x000000"
+      text=""
+      translation="[700,350]"  />
+    <Label
+      id="rating"
+      font="font:MediumBoldSystemFont"
+      color="0x000000"
+      text=""
+      translation="[1200,350]" />
+    <Label
+      id="description"
+      font="font:MediumBoldSystemFont"
+      color="0x000000"
+			wrap="true"
+			width="1000"
+      text=""
+      translation="[700,425]" />
+	</children>
+</component>

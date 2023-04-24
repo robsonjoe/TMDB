@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component   name="content_screen"   extends="Group"   initialFocus="content_grid" >
+<script type="text/brightscript" uri="pkg:/components/screens/content_screen.brs" />
+<interface>
+  <field id="feed_data"
+      type="assocarray"
+      onChange="onFeedChanged"
+      />
+  <field id="content_selected"
+      type="assocarray"
+      alias="content_grid.itemSelected"
+      />
+</interface>
+<children>
+  <Poster
+    id="mainbackground"
+    opacity="0.5"
+    width="1920"
+    height="700"
+    loadWidth="1280" 
+    loadHeight="500" 
+    loadDisplayMode = "scaleToFill" 
+    translation="[0,375]" 
+    uri="pkg:/images/footerbackground2.jpg"/>
+
+  <Label
+    translation="[120, 425]"
+      id="header"
+      color="0x000000"
+      font="font:LargeBoldSystemFont"
+      text="POPULAR"/>
+<PosterGrid
+  id="content_grid"
+  translation="[100,500]"
+  basePosterSize="[275,375]"
+  itemSpacing="[90,90]"
+  caption1NumLines="1"
+  caption2NumLines="1"
+  numColumns="5"
+  numRows="1"
+  rowFocusAnimationStyle = "fixedFocusWrap"
+  loadWidth="92" 
+  loadHeight="125" 
+  posterDisplayMode = "scaleToZoom"
+  />
+
+</children>
+
+</component>
